@@ -81,8 +81,9 @@ app.delete('/accounts/:id', (req, res) => {
 })
 app.use(errorhandler())
 
-app.listen(port)
+app.listen(port , ()=>{
 console.log(`server running at port:${port}`)
+})
 
 
 
